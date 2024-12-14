@@ -52,6 +52,6 @@ Make sure you have ssh in that system check with Command- ( which sshd ), if yes
 1. Now all that's left is to make a new instance and paste the scriptin user data so it will start and run the script automatically. 
 2. ![ssh ka 3](https://github.com/user-attachments/assets/79ff6735-ca65-4dac-ae2a-058be21fc074)
 3. This is done on one instance now we can create ASG and template it so we don't have to configure it for all instances.
-4. Now on main system we have to type ssh and private ip of host system and it will prompt some data Type yes and to not even type Yes we can do ssh -o StrictHostKeyCheckig=no ip.
+4. Now on main system we have to type ssh and private ip of host system and it will prompt some data Type yes and to not even type Yes we can do ssh -o StrictHostKeyChecking=no ip.
 5. ![ssh ka 4](https://github.com/user-attachments/assets/e89446b2-5d81-4942-b06f-a3aca5d1161b)
 6. Now next I will add a version update where the Vm will send there private Ip on S3 so i can make a inventory out of it and access it for ansible push.
